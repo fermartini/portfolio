@@ -10,6 +10,9 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Sono:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
@@ -30,60 +33,79 @@
                 <img class="cara" src="./img/foto_de_perfil.jpg" alt="Maxi Programa">            
             </div>
             <div class="caja-presentacion" >
-                <div>    
+                <div class="caja-presentacion-2">    
                     <h1>Hola, soy Fernando Martini</h1>
-                    <p class="presentacion">
-                        Estoy en el camino de aprendizaje para ser un desarrollador web front-end y la verdad me encanta lo que hago y estudio.
+                    <p class="presentacion font">
+                        Estoy camino a ser desarrollador web front-end porque descubri que me encanta lo que hago y estudio.
                     </p>
                 </div>
             </div>
+        </div >
+        <div class="scroll">
+            <img class="scroll--img bounce-top"src="./img/flecha-scroll.png" alt="">
         </div>
     </section>
     <section class="dos">
         <h2 data-aos="zoom-out-up" data-aos-duration="500">Sobre mí</h2>
-        <p data-aos="zoom-out-up" data-aos-duration="500">
+        <p data-aos="zoom-out-up" data-aos-duration="500" class="font">
              Soy estudiante autodidacta de programación desde Abril 2022. He realizado el curso #SeProgramar de Argentina Programa y en CoderHouse realice los de HTML, CSS, JavaScript. Actualmente estoy cursando React JS.
         </p>
         <h2 data-aos="zoom-out-up" data-aos-duration="500">Aptitudes</h2>
-        <p data-aos="zoom-out-up" data-aos-duration="500">
+        <p data-aos="zoom-out-up" data-aos-duration="500" class="font">
             Estas son algunas de las tecnologías de las que tengo conocimientos.
         </p>
         <div class="aptitudes">
             <div class="tech-list">
+                <div>
+                <h2>HTML</h2>
                 <img src="./img/html5.png" class="tech" alt="HTML-5" data-aos="flip-left" data-aos-duration="1000">
-                <img src="./img/css3.png" class="tech" alt="CSS-3" data-aos="flip-right" data-aos-duration="1000">
             </div>
-            <div class="tech-list">                
+            <div>
+                <h2>CSS</h2>
+                <img src="./img/css3.png" class="tech" alt="CSS-3" data-aos="flip-right" data-aos-duration="1000">
+            </div>            
+            </div>
+            <div class="tech-list"> 
+                <div>       
+                <h2>JAVA SCRIPT</h2>        
                 <img src="./img/js.png" class="tech" alt="Java Script" data-aos="flip-left" data-aos-duration="1000">
+            </div>
+            <div>
+                <h2>RACT JS</h2>
                 <img src="./img/reactjs.png" class="tech" alt="React JS" data-aos="flip-right" data-aos-duration="1000">
+            </div>
             </div>
         </div>
             <h2>Cursos realizados</h2>
             <ul>
-                <li>#SEPROGRAMAR en ARGENTINA PROGRAMA</li>
-                <li>Desarrollo Web en CODERHOUSE</li>
-                <li>Java Script en CODERHOUSE</li>
-                <li>Cursando REACT JS en CODERHOUSE</li>
+                <li class="font">#SEPROGRAMAR en ARGENTINA PROGRAMA</li>
+                <li class="font">Desarrollo Web en CODERHOUSE</li>
+                <li class="font">Java Script en CODERHOUSE</li>
+                <li class="font">Cursando REACT JS en CODERHOUSE</li>
             </ul>
     </section>
     <section class="tres">
         <h2>Mis Proyectos</h2>
         <div class="proyectos">
-            <div class="card" data-aos="flip-right" data-aos-duration="1000">
+            <div class="card proy" data-aos="flip-right" data-aos-duration="1000" >
                 <h3>Catalogo BRIC HOME</h3>
                 <img src="./img/bric-home.png" alt="bric home catalogo">
-                <p>
+                <p class="font">
                     Catalogo online, BRIC HOME.
                 </p>
-                <a href="https://brichome.vercel.app" target="_blank">Ver</a>
+                <div class="button-margin" data-aos="flip-down" data-aos-duration="1500">
+                <a href="https://brichome.vercel.app" target="_blank" class="button">Ver</a>
             </div>
-            <div class="card" data-aos="flip-right" data-aos-duration="1000">
+            </div>
+            <div class="card proy" data-aos="flip-right" data-aos-duration="1000" >
                 <h3>Musico PABLO AUBAIN</h3>
                 <img src="./img/pablo-aubain.png" alt="Pablo Aubain">
-                <p>
-                    Pagina estatica, para el cantante Pablo Aubain (Proyecto del curso de DESARROLLO WEB).
+                <p class="font">
+                    Pagina para el cantante Aubain.
                 </p>
-                <a href="https://pabloaubain.vercel.app/" target="_blank">Ver</a>
+                <div class="button-margin" data-aos="flip-down" data-aos-duration="1000">
+                <a href="https://pabloaubain.vercel.app/" target="_blank" class="button">Ver</a>
+            </div>  
             </div>
         </div>
     </section>
@@ -91,18 +113,22 @@
         <h2>Contactame</h2>
             <div class="contacto">
                 <a href="https://www.linkedin.com/in/fermartini/" target="_blank">
-                    <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" class="red-social" alt="">
+                    <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" class="red-social" alt="linkedin" data-aos="flip-down" data-aos-duration="750">
                 </a>
                 <hr>
                 <a href="https://www.instagram.com/hola.soymartini/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" class="red-social" alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" class="red-social" alt="instagram" data-aos="flip-down" data-aos-duration="750">
                 </a>
                 <hr>
                 <a href="https://github.com/KhallDragon" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="red-social" alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" class="red-social" alt="github" data-aos="flip-down" data-aos-duration="750">
+                </a>
+                <hr>
+                <a href="mailto:fer.martini878@gmail.com?Subject=Contacto" target="_blank">
+                    <img src="./img/gmail.png" class="red-social" alt="gmail" data-aos="flip-down" data-aos-duration="750">
                 </a>
             </div>
-            <p style="padding-top: 30px;">Contactame por <a href="mailto:fer.martini878@gmail.com?Subject=Contacto" target="_blank">mail</a></p>
+            
     </footer>
     <script>
         AOS.init();
