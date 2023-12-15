@@ -274,7 +274,19 @@ button.habilidades-boton:hover{
 }
 
 /*PROYECTOS*/
-
+.proyecto{
+    height: 100vh;
+}
+.swiper{
+    width: 80vw;
+    height: 75vh;
+    margin-top: 2.5rem;
+}
+.redes{
+    width: 20vw;
+    border-radius: 1rem;
+    -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,rgba(0,0,0,.4));
+}
 
 /*CONTACTAME*/
 
