@@ -1,0 +1,313 @@
+:root {
+    --font-light: Gotham-Light;
+    --color1: #EDF2F4;
+    --color2: #2B2D42;
+    --color3: #92DCE5;
+    --font-size-h1: 68.6px;
+    --font-size-p: 22px;
+    --font-size-icon: 18px;
+    --margen-xl: 5rem;
+    --margen-l: 3rem;
+    --margen-m: 1rem;
+    --margen-s: 0.5rem
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none; 
+    
+}
+
+a {
+    text-decoration: none;
+}
+main{
+    background-color: var(--color2);
+    overflow: hidden;
+}
+
+/*HEADER*/
+header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+nav.navbar.navbar-expand-lg.bg-transparent {
+    margin: 0;
+    width: 50vw;
+}
+.div-hr{
+    display: flex;
+    align-items: center;
+}
+.hr{
+    width: 40vw;
+    border: 1px solid var(--color3);
+    opacity: 0.5    ;
+}
+nav.navbar.navbar-expand-lg.bg-transparent {
+    margin-right: var(--margen-xl);
+}
+ul.navbar-nav {
+    gap: 3.5rem;
+    
+}
+a.nav-link {
+    color: var(--color1);   
+    font-family: var(--font-light);
+    transition: all 0.2s;
+}
+
+a.nav-link:hover{
+    color: var(--color3);
+    text-shadow: 0px 0px 0px var(--color3);
+    transform: scale(1.05);
+}
+/*PAGINA INICIO*/
+.inicio {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+h1 {
+    color: var(--color1);
+    font-size: var(--font-size-h1);
+}
+
+
+
+.inicio__parrafo {
+    color: var(--color1);
+    font-size: var(--font-size-p);
+    font-family: var(--font-light);
+}
+
+.inicio__ul {
+    display: flex;
+    padding: 0;
+    gap: 1rem
+}
+
+.inicio__lista {
+    background-color: var(--color3);
+    border-radius: 50%;    
+    padding: 5px 7px;
+    transition: all 0.5s;
+}
+.fp-overflow {
+    border-color: transparent;
+}
+.inicio__icono{
+    color: var(--color2);
+    width: var(--font-size-icon);
+    vertical-align: sub;
+    transition: all 0.5s;
+}
+li.inicio__lista:hover {
+    background: var(--color2);
+    .inicio__icono{
+     color: var(--color3);   
+     transform: scale(1.5);
+    }
+}
+
+.slider{
+    width: 75vw;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    bottom: 20%;
+    margin-left: calc((100vw - 75vw)/2);
+}
+.slide-track{
+    display: flex;
+    animation: scroll 10s linear infinite;
+    -webkit-animation: scroll 10s linear infinite;
+    width: calc(40px * 16);
+    gap: 90px;
+}
+.slidi{
+    width: 40px;
+}
+.slider-img{
+    width: 100%;
+    margin: 5rem;
+}
+.inicio-scroll-div{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+}
+.inicio-scroll{
+    height: 50px;
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+    position:absolute;
+    bottom: 2rem;
+    transition: all 0.5s;
+    margin-bottom: 1rem;
+}
+.inicio-scroll:hover{
+    transform: scale(1.2);
+}
+ 
+.shake-vertical {
+    -webkit-animation: shake-vertical 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s infinite both;
+    animation: shake-vertical 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s infinite both;
+  }
+  .shake-vertical:hover {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+/*QUIEN ES FERNANDO?*/
+.quien{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-left: 10rem;
+}
+
+.quien-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+h3 {
+    color: var(--color1);
+    font-size: 40px;
+    font-family: var(--font-light);
+}
+h2{
+    color: var(--color3);
+    font-size: 82px;
+}
+p{
+    color: var(--color1);
+    font-size: 18px;
+    font-family: var(--font-light);
+    margin-bottom: 2rem;
+}
+b{
+    color: var(--color3);
+}
+
+
+.quien-foto {
+    align-items: end;
+    display: flex;
+}
+img.quien-fernando {
+    width: 35vw;
+}
+/*HABILIDADES*/
+.habilidades {
+    height: 100vh;
+    margin-inline: 10rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.habilidades-titulo {
+    display: flex;
+    align-items: end;
+    margin-bottom: 3.5rem;
+}
+.habilidades-div {
+    display: flex;
+    justify-content: space-between;
+}
+.habilidades-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habilidades-icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.habilidades-botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+button.habilidades-boton {
+    background-color: #2b2d42;
+    border: 1.5px solid #92dce5;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+/*PROYECTOS*/
+
+
+/*CONTACTAME*/
+
+
+/*FOOTER*/
+
+
+
+/*ANIMACIONES*/
+
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-130px*8));
+        transform: translateX(calc(-130px*8));
+    }
+}
+
+
+  
+  
+  @keyframes shake-vertical {
+
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+      transform: translateY(8px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(6.4px);
+      transform: translateY(6.4px);
+    }
+  
+    90% {
+      -webkit-transform: translateY(-6.4px);
+      transform: translateY(-6.4px);
+    }
+  }
