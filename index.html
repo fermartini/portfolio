@@ -38,15 +38,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="fernando">Quien es Fernando?</a>
+                    <ul class="navbar-nav" id="myMenu">
+                        <li class="nav-item" data-menuanchor="firstPage" class="active">
+                            <a class="nav-link" href="#firstPage" >Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="habilidad">Habilidades</a>
+                        <li class="nav-item" data-menuanchor="secondPage">
+                            <a class="nav-link" href="#secondPage" id="fernando">Quien es Fernando?</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" id="proyecto">Proyectos</a>
+                        <li class="nav-item" data-menuanchor="thirdPage">
+                            <a class="nav-link" href="#thirdPage" id="habilidad">Habilidades</a>
+                        </li>
+                        <li class="nav-item" data-menuanchor="fourthPage">
+                            <a class="nav-link" href="#fourthPage" id="proyecto">Proyectos</a>
                         </li>
                     </ul>
                 </div>
@@ -55,8 +58,9 @@
     </header>
     <main>
         <div id="fullpage">
-            <section class="inicio section" id="section1">
+            <section class="inicio section"  id="section1">
                 <div class="inicio__titulos">
+                    <div>
                     <h1>FERNANDO MARTINI</h1>
                     <p class="inicio__parrafo">Estudiante de desarrollo de software.</p>
                     <div>
@@ -108,6 +112,7 @@
                             </li>
                         </ul>
                     </div>
+                </div>
                 </div>
 
 
@@ -165,12 +170,12 @@
                 </div>
             </div>
             <div class="inicio-scroll-div shake-vertical ">
-                <a href="">
+                <a href="#section2">
                     <img src="./src/img/scroll.png" alt="" class="inicio-scroll ">
                 </a>
 
             </div>
-            <section class="section" id="section2">
+            <section class="section"  id="section2">
                 <div class="quien">
                     <div class="quien-titulo">
                         <div>
@@ -194,7 +199,7 @@
                 </div>
 
             </section>
-            <section class="section">
+            <section class="section" id="section3">
                 <div class="habilidades">
                     <div class="habilidades-titulo">
                         <div>
@@ -215,7 +220,7 @@
 
                                 </button>
                                 <button class="habilidades-boton">
-                                    <img src="./src/img/reactjs.png" alt="" class="habilidades-iconos">
+                                    <img src="./src/img/react.png" alt="" class="habilidades-iconos">
                                     React
 
                                 </button>
@@ -242,15 +247,15 @@
                                     C#
                                 </button>
                                 <button class="habilidades-boton">
-                                    <img src="./src/img/sql.png" alt="" class="habilidades-iconos">
+                                    <img src="./src/img/server.png" alt="" class="habilidades-iconos">
                                     SQL Server
                                 </button>
                                 <button class="habilidades-boton">
-                                    <img src="./src/img/node.png" alt="" class="habilidades-iconos">
+                                    <img src="./src/img/nodejs.png" alt="" class="habilidades-iconos">
                                     NodeJs
                                 </button>
                                 <button class="habilidades-boton">
-                                    <img src="./src/img/node.png" alt="" class="habilidades-iconos">
+                                    <img src="./src/img/express.png" alt="" class="habilidades-iconos">
                                     Express Js
                                 </button>
                             </div>
