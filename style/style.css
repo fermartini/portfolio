@@ -242,14 +242,35 @@ img.quien-fernando {
 .habilidades-botones {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 0.3rem;
 }
 button.habilidades-boton {
+    display: flex;
+    position: relative;
+    justify-content: center;
     background-color: #2b2d42;
     border: 1.5px solid #92dce5;
     padding: 0.5rem;
     border-radius: 1rem;
     color: white;
+    transition: all 0.5s;
+}
+.habilidades-iconos{
+    height: 1.5rem;
+    display: none;
+    transition: all 0.5s;
+}
+
+button.habilidades-boton:hover{
+    background-color: var(--color3);
+    border-color: var(--color1);
+    .habilidades-iconos{
+        transition-delay: 5s;
+        display: inline;
+        position: absolute;
+        left: -5px;
+        top: -10px;
+    }
 }
 
 /*PROYECTOS*/
