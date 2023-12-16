@@ -562,6 +562,21 @@ img.redes {
         border-bottom: 2px solid white;
         margin-bottom: 1rem;
     }
+    .quien {
+        margin-right: 0;
+    }
+    .habilidades-skills {
+        padding: 0.5rem;
+    }
+    .habilidades {
+        height: 100vh;
+        margin-inline: 15rem;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+    }
+    .habilidades-div {
+        justify-content: flex-start;
+    }
     .proyecto {
         margin-inline: 6rem;
         height: 110vh;
