@@ -34,6 +34,15 @@ main{
     overflow: hidden;
 }
 
+/*ENTRE SCROLLS*/
+
+.medio{
+    height: 50vh;
+    width: 100vw;
+    background: #362c40;
+    display: block;
+    position: relative;
+}
 /*HEADER*/
 header {
     position: fixed;
@@ -73,7 +82,9 @@ a.nav-link:hover{
     text-shadow: 0px 0px 0px var(--color3);
     transform: scale(1.05);
 }
-
+a.nav-link:visited{
+    color: var(--color1)
+}
 li.nav-item.active a {
     color: var(--color3);
     border-bottom: 2px var(--color3) solid;
@@ -177,25 +188,20 @@ li.inicio__lista:hover {
     transition: all 0.5s;
     margin-bottom: 1rem;
 }
-.inicio-scroll:hover{
-    transform: scale(1.2);
-}
+
  
 .shake-vertical {
     -webkit-animation: shake-vertical 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s infinite both;
     animation: shake-vertical 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s infinite both;
   }
-  .shake-vertical:hover {
-    -webkit-animation: none;
-    animation: none;
-  }
+  
 
 /*QUIEN ES FERNANDO?*/
 .quien{
     height: 100vh;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    margin-left: 10rem;
+    margin-left: 15rem;
 }
 
 .quien-titulo {
@@ -235,7 +241,7 @@ img.quien-fernando {
 /*HABILIDADES*/
 .habilidades {
     height: 100vh;
-    margin-inline: 10rem;
+    margin-inline: 15rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -295,13 +301,18 @@ button.habilidades-boton:hover .habilidades-iconos{
     
     opacity: 1;
 }
+.habilidades-icono p {
+    font-size: 2rem;
+}
 
 /*PROYECTOS*/
 .proyecto{
     height: 100vh;
+    margin-inline: 15rem;
+    position: relative;
 }
 .swiper{
-    width: 80vw;
+    width: 75vw;
     height: 75vh;
     margin-top: 2.5rem;
 }
@@ -310,7 +321,42 @@ button.habilidades-boton:hover .habilidades-iconos{
     border-radius: 1rem;
     -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,rgba(0,0,0,.4));
 }
-
+img.redes {
+    border: 2px solid var(--color3);
+    transition: all 1s ease;
+}
+.swiper.swiper-coverflow.swiper-3d.swiper-initialized.swiper-horizontal.swiper-watch-progress {
+    position: absolute;
+    bottom: 0px;
+}
+.swiper-div{
+    position: relative;
+}
+.github{
+    position: absolute;
+    bottom: -40px;
+    left: 80px;
+    height: 30%;
+    opacity: 0;
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    transition: all 0.5s;
+}
+.github:hover{
+    transform: scale(1.1);
+}
+.web{
+        position: absolute;
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+        bottom: -40px;
+        right: 200px;
+        height: 30%;
+        opacity: 0;
+        transition: all 0.5s;
+}
+.web:hover{
+    transform: scale(1.1);
+}
 /*CONTACTAME*/
 
 

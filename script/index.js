@@ -10,6 +10,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   effect: 'coverflow',
   loop: true,
+
   autoplay: {
     delay: 1500,
     pauseOnMouseEnter: true,
@@ -46,5 +47,48 @@ const swiper = new Swiper('.swiper', {
   },
 
   // And if we need scrollbar
+
+});
+
+let imagenActual = null;
+let webActual = null;
+let githubActual = null;
+let ancorgActual = null;
+let ancorwActual = null
+const a = 0;
+const imagen = document.querySelectorAll(".redes");
+const div = document.querySelectorAll('.swiper-slide');
+const github = document.querySelectorAll(".github")
+const web = document.querySelectorAll(".web")
+const ancorg = document.querySelectorAll(".github-a")
+const ancorw = document.querySelectorAll(".web-a")
+
+
+
+imagen.forEach((imagen, indice) => {
+  imagen.addEventListener('click', () => {
+
+    if (imagenActual) {
+      imagenActual.style.filter = 'none';
+    }
+    if (webActual) {
+      ancorgActual.classList.add("d-none")
+      ancorwActual.classList.add("d-none")
+    }
+    imagen.style.filter = 'blur(5px)';
+    imagenActual = imagen;
+    
+    
+
+
+    github[indice].style.opacity = '1'
+    ancorg[indice].classList.remove("d-none")
+    web[indice].style.opacity = '1'
+    ancorw[indice].classList.remove("d-none")
+    webActual = web[indice]
+    githubActual = github[indice]
+    ancorgActual = ancorg[indice]
+    ancorwActual = ancorw[indice]
+  })
 
 });
