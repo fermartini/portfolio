@@ -17,32 +17,35 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style-type: none; 
+    list-style-type: none;
     scroll-behavior: smooth;
-    
+
 }
+
 html {
     scroll-behavior: smooth;
-  }
-  
-  
+}
+
+
 a {
     text-decoration: none;
 }
-main{
+
+main {
     background-color: var(--color2);
     overflow: hidden;
 }
 
 /*ENTRE SCROLLS*/
 
-.medio{
+.medio {
     height: 50vh;
     width: 100vw;
     background: #362c40;
     display: block;
     position: relative;
 }
+
 /*HEADER*/
 header {
     position: fixed;
@@ -51,44 +54,53 @@ header {
     justify-content: space-between;
     z-index: 2;
 }
+
 nav.navbar.navbar-expand-lg.bg-transparent {
     margin: 0;
     width: 50vw;
 }
-.div-hr{
+
+.div-hr {
     display: flex;
     align-items: center;
 }
-.hr{
+
+.hr {
     width: 40vw;
     border: 1px solid var(--color3);
-    opacity: 0.5    ;
+    opacity: 0.5;
 }
+
 nav.navbar.navbar-expand-lg.bg-transparent {
     margin-right: var(--margen-xl);
 }
+
 ul.navbar-nav {
     gap: 3.5rem;
-    
+
 }
+
 a.nav-link {
-    color: var(--color1);   
+    color: var(--color1);
     font-family: var(--font-light);
     transition: all 0.2s;
 }
 
-a.nav-link:hover{
+a.nav-link:hover {
     color: var(--color3);
     text-shadow: 0px 0px 0px var(--color3);
     transform: scale(1.05);
 }
-a.nav-link:visited{
+
+a.nav-link:visited {
     color: var(--color1)
 }
+
 li.nav-item.active a {
     color: var(--color3);
     border-bottom: 2px var(--color3) solid;
 }
+
 /*PAGINA INICIO*/
 .inicio {
     width: 100vw;
@@ -100,6 +112,7 @@ li.nav-item.active a {
     align-items: end;
     grid-template-rows: 2fr 1fr 1fr;
 }
+
 .inicio__titulos {
     height: 100vh;
     width: 100vw;
@@ -109,6 +122,7 @@ li.nav-item.active a {
     flex-direction: column;
     padding-bottom: 12rem;
 }
+
 h1 {
     color: var(--color1);
     font-size: var(--font-size-h1);
@@ -130,29 +144,33 @@ h1 {
 
 .inicio__lista {
     background-color: var(--color3);
-    border-radius: 50%;    
+    border-radius: 50%;
     padding: 5px 7px;
     transition: all 0.5s;
 }
+
 .fp-overflow {
     height: 100vh;
     width: 100vw;
 }
-.inicio__icono{
+
+.inicio__icono {
     color: var(--color2);
     width: var(--font-size-icon);
     vertical-align: sub;
     transition: all 0.5s;
 }
+
 li.inicio__lista:hover {
     background: var(--color2);
-    .inicio__icono{
-     color: var(--color3);   
-     transform: scale(1.5);
+
+    .inicio__icono {
+        color: var(--color3);
+        transform: scale(1.5);
     }
 }
 
-.slider{
+.slider {
     width: 75vw;
     height: auto;
     overflow: hidden;
@@ -160,44 +178,49 @@ li.inicio__lista:hover {
     bottom: 20%;
     margin-left: calc((100vw - 75vw)/2);
 }
-.slide-track{
+
+.slide-track {
     display: flex;
     animation: scroll 10s linear infinite;
     -webkit-animation: scroll 10s linear infinite;
     width: calc(40px * 16);
     gap: 90px;
 }
-.slidi{
+
+.slidi {
     width: 40px;
 }
-.slider-img{
+
+.slider-img {
     width: 100%;
     margin: 5rem;
 }
-.inicio-scroll-div{
+
+.inicio-scroll-div {
     display: flex;
     justify-content: center;
     position: absolute;
     width: 100vw;
 }
-.inicio-scroll{
+
+.inicio-scroll {
     height: 50px;
     filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-    position:absolute;
+    position: absolute;
     bottom: 2rem;
     transition: all 0.5s;
     margin-bottom: 1rem;
 }
 
- 
+
 .shake-vertical {
     -webkit-animation: shake-vertical 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s infinite both;
     animation: shake-vertical 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s infinite both;
-  }
-  
+}
+
 
 /*QUIEN ES FERNANDO?*/
-.quien{
+.quien {
     height: 100vh;
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -216,17 +239,20 @@ h3 {
     font-size: 40px;
     font-family: var(--font-light);
 }
-h2{
+
+h2 {
     color: var(--color3);
     font-size: 82px;
 }
-p{
+
+p {
     color: var(--color1);
     font-size: 18px;
     font-family: var(--font-light);
     margin-bottom: 2rem;
 }
-b{
+
+b {
     color: var(--color3);
 }
 
@@ -235,9 +261,11 @@ b{
     align-items: end;
     display: flex;
 }
+
 img.quien-fernando {
     width: 35vw;
 }
+
 /*HABILIDADES*/
 .habilidades {
     height: 100vh;
@@ -245,30 +273,36 @@ img.quien-fernando {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
+
 .habilidades-titulo {
     display: flex;
     align-items: end;
     margin-bottom: 3.5rem;
 }
+
 .habilidades-div {
     display: flex;
     justify-content: space-around;
 }
+
 .habilidades-skills {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .habilidades-icono {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .habilidades-botones {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
+
 button.habilidades-boton {
     display: flex;
     position: relative;
@@ -281,82 +315,100 @@ button.habilidades-boton {
     transition: all 1s ease;
     width: 8rem
 }
-.habilidades-iconos{
+
+.habilidades-iconos {
     height: 1.5rem;
     position: absolute;
     left: -5px;
     top: -10px;
-    
+
     opacity: 0;
     transition: opacity 1s ease;
 }
 
-button.habilidades-boton:hover{
+button.habilidades-boton:hover {
     background-color: var(--color3);
     border-color: var(--color1);
     color: var(--color2);
-    
+
 }
-button.habilidades-boton:hover .habilidades-iconos{
-    
+
+button.habilidades-boton:hover .habilidades-iconos {
+
     opacity: 1;
 }
+
 .habilidades-icono p {
     font-size: 2rem;
 }
 
 /*PROYECTOS*/
-.proyecto{
+.proyecto {
     height: 100vh;
     margin-inline: 15rem;
     position: relative;
 }
-.swiper{
+
+.swiper {
     width: 75vw;
-    height: 75vh;
+    height: 50vh;
     margin-top: 2.5rem;
 }
-.redes{
+
+.redes {
     width: 20vw;
     border-radius: 1rem;
-    -webkit-box-reflect: below 10px linear-gradient(transparent,transparent,rgba(0,0,0,.4));
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, rgba(0, 0, 0, .4));
 }
+
 img.redes {
     border: 2px solid var(--color3);
     transition: all 1s ease;
 }
+
 .swiper.swiper-coverflow.swiper-3d.swiper-initialized.swiper-horizontal.swiper-watch-progress {
-    position: absolute;
     bottom: 0px;
 }
-.swiper-div{
+
+.swiper-div {
     position: relative;
 }
-.github{
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.github {
     position: absolute;
     bottom: -40px;
     left: 80px;
     height: 30%;
     opacity: 0;
-    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen */
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     transition: all 0.5s;
 }
-.github:hover{
+
+.github:hover {
     transform: scale(1.1);
 }
-.web{
-        position: absolute;
-        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
-        bottom: -40px;
-        right: 200px;
-        height: 30%;
-        opacity: 0;
-        transition: all 0.5s;
+
+.web {
+    position: absolute;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    bottom: -40px;
+    right: 200px;
+    height: 30%;
+    opacity: 0;
+    transition: all 0.5s;
 }
-.web:hover{
+
+.web:hover {
     transform: scale(1.1);
 }
+
 /*CONTACTAME*/
 
 
@@ -366,50 +418,221 @@ img.redes {
 
 /*ANIMACIONES*/
 
-@keyframes scroll{
-    0%{
+@keyframes scroll {
+    0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         -webkit-transform: translateX(calc(-130px*8));
         transform: translateX(calc(-130px*8));
     }
 }
 
 
-  
-  
-  @keyframes shake-vertical {
+
+
+@keyframes shake-vertical {
 
     0%,
     100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-  
+
     10%,
     30%,
     50%,
     70% {
-      -webkit-transform: translateY(-8px);
-      transform: translateY(-8px);
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
     }
-  
+
     20%,
     40%,
     60% {
-      -webkit-transform: translateY(8px);
-      transform: translateY(8px);
+        -webkit-transform: translateY(8px);
+        transform: translateY(8px);
     }
-  
+
     80% {
-      -webkit-transform: translateY(6.4px);
-      transform: translateY(6.4px);
+        -webkit-transform: translateY(6.4px);
+        transform: translateY(6.4px);
     }
-  
+
     90% {
-      -webkit-transform: translateY(-6.4px);
-      transform: translateY(-6.4px);
+        -webkit-transform: translateY(-6.4px);
+        transform: translateY(-6.4px);
     }
-  }
+}
+@media screen and (max-width: 1440px){
+    .github {
+        position: absolute;
+        bottom: -40px;
+        left: 80px;
+        height: 35%;
+        opacity: 0;
+        background-size: cover;
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+        transition: all 0.5s;
+    }
+    .web {
+        position: absolute;
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+        bottom: -40px;
+        right: 147px;
+        height: 35%;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .quien {
+        margin-left: 5rem;
+    }
+
+    .habilidades {
+        margin-inline: 5rem;
+    }
+
+    .proyecto {
+        margin-inline: 8rem;
+    }
+
+    .redes {
+        width: 34vw
+    }
+    .proyecto {
+        height: 108vh;  
+    }
+    img.redes {
+        width: 15rem;
+    }
+    img.web {
+        right: 70px;
+        height: 43%;
+    }
+    img.github {
+        left: 40px;
+        height: 43%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+
+        justify-content: end;
+    }
+    button.navbar-toggler {
+        background-color: var(--color3)!important   ;
+    }
+    div#navbarNav {
+        background: black;
+        opacity: 1;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+    .div-hr {
+        align-items: baseline;
+        padding: 1rem;
+    }
+    .habilidades {
+        margin-inline: 2rem;
+        flex-direction: column;
+    }
+    .habilidades-icono p {
+        font-size: 1rem;
+    }
+    .habilidades-div {
+        flex-direction: column;
+    }
+    .habilidades-skills {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        border-bottom: 2px solid white;
+        margin-bottom: 1rem;
+    }
+    .proyecto {
+        margin-inline: 6rem;
+        height: 110vh;
+    }
+    .proyecto {
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    h1 {
+        font-size: 3rem;
+    }
+    p.inicio__parrafo {
+        font-size: 1.2rem;
+    }
+    .inicio__titulos {
+        margin-inline: 2rem;
+    }
+    .quien {
+        margin-inline: 2rem;
+    }
+    .quien-titulo p {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .quien {
+        grid-template-columns: none;
+        grid-template-rows: 5fr 1fr;
+    }
+    .quien-foto {
+        justify-content: end;
+        /* height: 30vh; */
+    }
+    img.quien-fernando {
+        width: 33vh;
+    }
+    .quien-titulo {
+        justify-content: end;
+    }
+    .habilidades-skills {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .habilidades-icono img {
+        height: 6vh;
+    }
+    button.habilidades-boton {
+        padding: 0.1rem;
+    }
+    .habilidades-icono p {
+        margin-bottom: 0.5rem;
+    }
+    .habilidades-titulo {
+        margin-bottom: 0.3rem;
+    }
+    .habilidades {
+        margin-inline: 1rem;
+    }
+    .proyecto {
+        margin-inline: 2rem;
+    }
+    nav.navbar.navbar-expand-lg.bg-transparent {
+        margin: 0;
+    }
+    img.web {
+        right: 43px;
+        height: 43%;
+    }
+}

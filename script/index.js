@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   effect: 'coverflow',
   loop: true,
-
+  slidesPerView: 3,
   autoplay: {
     delay: 1500,
     pauseOnMouseEnter: true,
