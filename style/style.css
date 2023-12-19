@@ -348,9 +348,6 @@ button.habilidades-boton {
 svg.bi.bi-download.inicio__icono path {
     transition: all 1s;
 }
-svg.bi.bi-whatsapp.inicio__icono path{
-    transition: all 0.5s;
-}
 .ancor{
     transition: all 1s;
 }
