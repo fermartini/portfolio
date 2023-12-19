@@ -287,15 +287,24 @@ img.quien-fernando {
 .ancor{
     text-decoration: none;
 }
+
 .quien-botones {
     display: flex;
     justify-content: end;
     gap: 2rem;
 }
+button.habilidades-boton.quien-boton {
+    display: flex;
+    justify-content: space-evenly;
+}
 button.habilidades-boton {
     align-items: center;
 }
-
+button#descargarCV {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
 .habilidades-skills {
     display: flex;
     flex-direction: column;
@@ -336,12 +345,28 @@ button.habilidades-boton {
     opacity: 0;
     transition: opacity 1s ease;
 }
-
+svg.bi.bi-download.inicio__icono path {
+    transition: all 1s;
+}
+svg.bi.bi-whatsapp.inicio__icono path{
+    transition: all 0.5s;
+}
+.ancor{
+    transition: all 1s;
+}
 button.habilidades-boton:hover {
     background-color: var(--color3);
     border-color: var(--color1);
     color: var(--color2);
-
+    svg.bi.bi-download.inicio__icono path {
+        color: var(--color2);
+    }
+    svg.bi.bi-whatsapp.inicio__icono path {
+        color: #133d13;
+    }
+    .ancor{
+        color: var(--color2);
+    }
 }
 
 button.habilidades-boton:hover .habilidades-iconos {
