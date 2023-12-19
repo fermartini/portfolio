@@ -92,3 +92,7 @@ imagen.forEach((imagen, indice) => {
   })
 
 });
+
+document.getElementById('descargarCV').addEventListener('click', function() {
+  // Simula el clic en el enlace oculto para descargar el PDF
+  document.getElementById('enlaceDescarga').click();   });
