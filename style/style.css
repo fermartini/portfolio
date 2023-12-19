@@ -538,7 +538,11 @@ img.redes {
 }
 
 @media screen and (max-width: 768px) {
-
+    .quien-botones {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
     .navbar>.container,
     .navbar>.container-fluid,
     .navbar>.container-lg,
