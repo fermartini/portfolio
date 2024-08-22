@@ -1,0 +1,67 @@
+---
+import Github from "./iconos/Github.astro";
+import Web from "./iconos/Web.astro";
+
+const { title, description, tecno, pagina, codigo, img, tecnoImg } =
+    Astro.props;
+---
+
+<div
+    class="block shadow h-full rounded-lg text-surface shadow-secondary-1 bg-surface-dark text-white border-slate-950 col-span-1"
+>
+    <div
+        class="overflow-hidden bg-cover bg-no-repeat bg-slate-950 border-slate-950"
+    >
+        <img class="rounded-t-lg" src={img} alt={title} />
+    </div>
+    <div>
+        <h4 class="text-3xl text-center py-4 bg-slate-950">{title}</h4>
+    </div>
+    <div class="grid grid-cols-3">
+        {
+            tecno.map((tec, i) => (
+                <div class="text-center text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-gray-800 text-white-300 flex justify-center mb-3 col-span-1 ">
+                    <span>{tec} </span>
+                    <div class="flex justify-center pl-2">
+                        <img
+                            src={tecnoImg[i]}
+                            alt={tec}
+                            class="w-auto h-4"
+                        />
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+    <div class="h-full w-full bg-slate-950">
+        <div
+            class="h-48 w-full  bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"
+        >
+            <div class="flex justify-center gap-10 z-10 py-5">
+                <a
+                    href={codigo}
+                    target="_blank"
+                    class="flex text-xs flex-col items-center"
+                    ><Github
+                        w="30"
+                        clase="text-red-800 z-10 pb-2 hover:scale-125 hover:text-red-400 transition-all duration-300 "
+                    /> Codigo</a
+                >
+                <a
+                    href={pagina}
+                    target="_blank"
+                    class="z-10 flex text-xs flex-col items-center"
+                    ><Web
+                        w="30"
+                        clase="text-red-800 z-10 pb-2 hover:scale-125 hover:text-red-400 transition-all duration-300"
+                    /> Web</a
+                >
+            </div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    
+</div>
