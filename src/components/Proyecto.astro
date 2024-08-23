@@ -20,8 +20,8 @@ const { title, description, tecno, pagina, codigo, img, tecnoImg } =
     <div class="grid grid-cols-3">
         {
             tecno.map((tec, i) => (
-                <div class="text-center text-xs font-medium me-2 px-2.5 py-0.5 rounded bg-gray-800 text-white-300 flex justify-center mb-3 col-span-1 ">
-                    <span>{tec} </span>
+                <div class="text-center text-sm font-medium me-2 px-2.5 py-0.5 rounded bg-gray-800 text-white-300 flex justify-center mb-3 col-span-1 items-center hover:bg-red-800 transition-colors duration-200 ">
+                    <span class="text-nowrap">{tec} </span>
                     <div class="flex justify-center pl-2">
                         <img
                             src={tecnoImg[i]}
