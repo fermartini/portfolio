@@ -2,17 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Proyecto from "../components/Proyecto.astro";
-import { object } from "astro/zod";
+import Github from "../components/iconos/Github.astro";
+import Whatsapp from "../components/iconos/Whatsapp.astro";
+import Mail from "../components/iconos/Mail.astro";
+import Llamada from "../components/iconos/Llamada.astro";
 
 const proyectos = {
 	gastapp: {
 		nombre: "GastApp",
 		descripcion: "App Web para gestionar Ingresos y gastos",
-		tecno: [
-			"React",
-			".Net",
-			"SQl server",
-		],
+		tecno: ["React", ".Net", "SQl server"],
 		tecnoImg: [
 			"https://fermartini.github.io/imggastapp/skills/react.png",
 			"https://fermartini.github.io/imggastapp/skills/net.png",
@@ -60,7 +59,7 @@ const proyectos = {
 		pagina: "https://pablocm.vercel.app/",
 		codigo: "https://github.com/fermartini/pablocm",
 		img: "https://fermartini.github.io/imggastapp/proyectos/pablocm.png",
-	}
+	},
 };
 ---
 
@@ -86,14 +85,17 @@ const proyectos = {
 				</h1>
 				<h3 class="text-red-500 text-3xl">de software.</h3>
 			</div>
+			<svg class="animate-bounce w-6 h-6 ... text-white">
+				HOLA QUE TAL
+			</svg>
 		</section>
-		<section class="h-screen w-fit flex flex-col lg:mx-10 xl:mx-60">
-			<h2 class="text-xl xl:text-8xl font-extrabold text-white py-10">
+		<section class="h-full w-fit flex flex-col mx-5 lg:mx-10 xl:mx-60">
+			<h2
+				class="text-3xl xl:text-8xl font-extrabold text-white pb-10 lg:pb-24"
+			>
 				PROYECTOS
 			</h2>
-			<div
-				class="grid grid-cols-1 lg:grid-cols-2 gap-10"
-			>
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
 				{
 					Object.values(proyectos).map(
 						({
@@ -121,6 +123,81 @@ const proyectos = {
 				}
 			</div>
 		</section>
+		<section class="w-fit flex flex-col mx-10 mb-22 lg:mx-10 xl:mx-60 lg:mb-36">
+			<h2
+				class="text-xl xl:text-8xl font-extrabold text-white  pb-10"
+			>
+				QUIEN ES <span class="text-red-500">FERNANDO</span>?
+			</h2>
+			<div class="grid grid-cols-1  lg:grid-cols-2 ">
+				<div class="flex flex-col justify-center">
+					<p class="text-white text-lg lg:text-xl">
+						Soy estudiante de la Tecnicatura en <span
+							class="text-red-500">Desarrollo de Software</span
+						>, con el 50% de la carrera completada y un sólido
+						trasfondo en el área administrativa, acumulando 10 años
+						de <span class="text-red-500">experiencia</span> en roles
+						clave.
+					</p>
+					<div class="mt-3 lg:mt-10">
+						<h3 class="text-white lg:text-5xl text-3xl lg:mb-5 mb-2">Contactame</h3>
+						<div class="flex gap-3 lg:gap-7">
+							<a
+								href="mailto:fermartini.dev@gmail.com"
+								target="_blank"
+								class="p-0 hover:scale-150 transition-transform transition-duration-150"
+								><Mail
+									clase="text-red-500 hover:text-white w-6 lg:w-8"
+								/></a
+							>
+							<a
+								href="https://www.linkedin.com/in/fermartini/"
+								target="_blank"
+								class="p-0 hover:scale-125 transition-transform transition-duration-150"
+								><Llamada
+									clase="text-red-500 hover:text-white w-5 lg:w-8"
+								/></a
+							>
+							<a
+								href="https://github.com/fermartini"
+								target="_blank"
+								class="p-0 hover:scale-125 transition-transform transition-duration-150"
+							>
+								<Github
+									clase="text-red-500 hover:text-white w-6 lg:w-8"
+								/></a
+							>
+							<a
+								href="https://wa.me/541164618667"
+								target="_blank"
+								class="p-0 hover:scale-125 transition-transform transition-duration-150"
+								><Whatsapp
+									clase="text-red-500 hover:text-white w-6 lg:w-8"
+								/></a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="flex justify-center mt-5">
+					<img
+						src="https://fermartini.github.io/imggastapp/perfil/pertfolio-quien.png"
+						alt="Fernando"
+						class="rounded-full h-80"
+					/>
+				</div>
+			</div>
+		</section>
+		<footer>
+			
+
+<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+    <div class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-center">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">2024  Desarrollador de Software.
+    </span>
+    
+    </div>
+</footer>
+
 	</main>
 	<!-- Modal -->
 	<div
@@ -166,6 +243,4 @@ const proyectos = {
 	});
 </script>
 
-<style>
-	
-</style>
+<style></style>
