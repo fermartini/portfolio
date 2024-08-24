@@ -2,7 +2,7 @@
 import Github from "./iconos/Github.astro";
 import Web from "./iconos/Web.astro";
 
-const { title, description, tecno, pagina, codigo, img, tecnoImg } =
+const { title, description, tecno, pagina, codigo, img, tecnoImg, id, id2, gif } =
     Astro.props;
 ---
 
@@ -10,9 +10,20 @@ const { title, description, tecno, pagina, codigo, img, tecnoImg } =
     class="block shadow h-full rounded-lg text-surface shadow-secondary-1 bg-surface-dark text-white border-slate-950 col-span-1"
 >
     <div
-        class="overflow-hidden bg-cover bg-no-repeat bg-slate-950 border-slate-950"
+        class="relative overflow-hidden bg-cover bg-no-repeat bg-slate-950 border-slate-950"
     >
-        <img class="rounded-t-lg" src={img} alt={title} />
+        <img
+            id=`${id}`            
+            class="rounded-t-lg inset-0 transition-opacity duration-300"
+            src={img}
+            alt={title}
+        />
+        <img
+            id=`${id2}`
+            class="rounded-t-lg absolute inset-0 opacity-0 transition-opacity duration-300"
+            src={gif}
+            alt={title}
+        />
     </div>
     <div>
         <h4 class="text-3xl text-center py-4 bg-slate-950">{title}</h4>
@@ -65,3 +76,65 @@ const { title, description, tecno, pagina, codigo, img, tecnoImg } =
     </div>
     
 </div>
+
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const staticImg = document.getElementById('1');
+            const staticImg1 = document.getElementById('3');
+            const staticImg2 = document.getElementById('5');
+            const staticImg3 = document.getElementById('7');
+            const animatedImg = document.getElementById('2');
+            const animatedImg1 = document.getElementById('4');
+            const animatedImg2 = document.getElementById('6');
+            const animatedImg3 = document.getElementById('8');
+            const container = staticImg.parentElement;
+            const container1 = staticImg1.parentElement;
+            const container2 = staticImg2.parentElement;
+            const container3 = staticImg3.parentElement;
+
+            container.addEventListener('mouseenter', () => {
+                staticImg.style.opacity = '0';
+                animatedImg.style.opacity = '1';
+                console.log('hp;a');
+                
+            });
+
+            container.addEventListener('mouseleave', () => {
+                staticImg.style.opacity = '1';
+                animatedImg.style.opacity = '0';
+            });
+            container1.addEventListener('mouseenter', () => {
+                staticImg1.style.opacity = '0';
+                animatedImg1.style.opacity = '1';
+                console.log('hp;a');
+                
+            });
+
+            container1.addEventListener('mouseleave', () => {
+                staticImg1.style.opacity = '1';
+                animatedImg1.style.opacity = '0';
+            });
+            container2.addEventListener('mouseenter', () => {
+                staticImg2.style.opacity = '0';
+                animatedImg2.style.opacity = '1';
+                console.log('hp;a');
+                
+            });
+
+            container2.addEventListener('mouseleave', () => {
+                staticImg2.style.opacity = '1';
+                animatedImg2.style.opacity = '0';
+            });
+            container3.addEventListener('mouseenter', () => {
+                staticImg3.style.opacity = '0';
+                animatedImg3.style.opacity = '1';
+                console.log('hp;a');
+                
+            });
+
+            container3.addEventListener('mouseleave', () => {
+                staticImg3.style.opacity = '1';
+                animatedImg3.style.opacity = '0';
+            });
+        });
+    </script>
