@@ -5,10 +5,11 @@ export default {
 		extend: {
 			animation: {
 				squeeze: "squeeze 0.6s ease-in-out",
-				slide1: "slide 0.2s ease-out",
+				slide1: "slide 0.2s ease-out ",
 				slide2: "slide 0.4s ease-out",
 				slide3: "slide 0.6s ease-out",
-				slide4: "slide 0.8s ease-out"
+				slide4: "slide 0.8s ease-out",
+				jump: "jump 1s ease-in-out infinite",
 
 			},
 			keyframes: {
@@ -27,13 +28,24 @@ export default {
 					"100%": {
 						transform: "translateY(0)"
 					}
+				}, jump: {
+					"0%": {
+						transform: "translateY(0)"
+					},
+					"50%": {
+						transform: "translateY(-20px)"
+					},
+					"100%": {
+						transform: "translateY(0)"
+					}
 				}
 
 			},
-			
+
+
 		}
 	},
 	plugins: [{
 	}]
-	
+
 }
